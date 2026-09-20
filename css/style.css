@@ -411,7 +411,7 @@ body {
   background: var(--white);
   border: 1px solid var(--olive-500);
   border-radius: 4px;
-  margin-top: -64px;
+  margin-top: 24px;
   padding: 30px 26px 28px;
   box-shadow: 0 18px 40px rgba(31,36,23,.14);
 }
