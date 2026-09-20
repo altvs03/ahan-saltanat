@@ -199,7 +199,8 @@ body {
 }
 .corner-ornament--left  { left: 14px; bottom: 6px; }
 .corner-ornament--right { right: 14px; bottom: 6px; transform: scaleX(-1); }
-.guests-body { position: relative; padding-bottom: 84px; }
+.guests-body,
+.schedule-body { position: relative; padding-bottom: 84px; }
 
 .divider {
   width: 220px;
