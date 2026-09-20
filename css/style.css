@@ -606,6 +606,12 @@ body {
 .hero-title .letter { margin-right: clamp(.05em, 1.6vw, .22em); }
 .hero-title .letter:last-child { margin-right: 0; }
 
+.letter.amp {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+}
+
 /* ---------- reveal / scroll animations ---------- */
 
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity .9s var(--ease-soft), transform .9s var(--ease-soft); }

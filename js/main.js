@@ -27,7 +27,7 @@
     el.textContent = "";
     text.split("").forEach(function (ch, i) {
       var span = document.createElement("span");
-      span.className = "letter";
+      span.className = ch === "&" ? "letter amp" : "letter";
       span.textContent = ch === " " ? " " : ch;
       var dx = (Math.random() * 2 - 1) * spread;
       var dy = -Math.abs(Math.random()) * spread - 12;
