@@ -376,7 +376,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  gap: 12px;
+  gap: 20px;
   padding-bottom: 8px;
   border-bottom: 1px dashed var(--olive-500);
 }
@@ -385,6 +385,7 @@ body {
   font-size: .98rem;
   letter-spacing: .02em;
   color: var(--ink);
+  margin-right: auto;
 }
 .schedule-time {
   font-family: var(--font-display);
