@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title id="page-title">AHAN &amp; SALTANAT — WEDDING DAY</title>
+<meta name="description" id="page-description" content="Үйлену тойына арналған электронды шақыру">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<button id="music-toggle" class="music-btn" type="button" aria-label="Музыканы қосу/өшіру" title="Музыка">
+  <svg class="icon-play" viewBox="0 0 24 24" width="16" height="16"><path d="M6 4l14 8-14 8V4z" fill="currentColor"/></svg>
+  <svg class="icon-pause" viewBox="0 0 24 24" width="16" height="16" hidden><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" fill="currentColor"/></svg>
+</button>
+
+<audio id="bg-music" loop preload="none"></audio>
+
+<div class="site">
+
+  <!-- 1. HERO -->
+  <section class="section hero" id="hero">
+    <div class="photo-frame photo-frame--hero">
+      <div class="photo-parallax">
+        <div class="photo-bg kenburns" data-photo="hero"></div>
+      </div>
+      <div class="photo-gradient-bottom"></div>
+      <div class="hero-name">
+        <span id="hero-name-text" data-config="coupleNamesLatin">Ahan &amp; Saltanat</span>
+      </div>
+    </div>
+
+    <div class="section-body hero-body">
+      <h1 class="hero-title reveal-load" data-delay="2" id="hero-title-text" data-config="titleText">Wedding Day</h1>
+
+      <div class="monogram monogram--couple reveal-load" data-delay="3">
+        <div class="monogram-dates" id="monogram-dates"></div>
+        <div class="monogram-line" aria-hidden="true"></div>
+        <div class="monogram-id monogram-id--couple" id="monogram-couple"></div>
+      </div>
+
+      <svg class="divider reveal-load" data-delay="4" viewBox="0 0 300 30" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 15 Q 75 0, 140 15" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path d="M290 15 Q 225 0, 160 15" fill="none" stroke="currentColor" stroke-width="1"/>
+        <circle cx="150" cy="15" r="3.5" fill="currentColor"/>
+        <circle cx="10" cy="15" r="1.6" fill="currentColor"/>
+        <circle cx="290" cy="15" r="1.6" fill="currentColor"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- 2. ПРИГЛАШЕНИЕ -->
+  <section class="section invite" id="invite">
+    <div class="photo-frame photo-frame--tall">
+      <div class="photo-parallax">
+        <div class="photo-bg kenburns" data-photo="invitation"></div>
+      </div>
+      <div class="photo-gradient-bottom"></div>
+    </div>
+    <div class="torn-edge" aria-hidden="true"></div>
+
+    <div class="section-body">
+      <p class="script-name reveal">Құрметті</p>
+      <p class="guests-text type-reveal">
+        АҒАЙЫН-ТУЫС, БАУЫРЛАР,<br>
+        ҚҰДА-ЖЕКЖАТ,<br>
+        ДОС-ЖАРАНДАР,<br>
+        ӘРІПТЕСТЕР МЕН КӨРШІЛЕР!
+      </p>
+      <svg class="divider reveal" viewBox="0 0 300 30" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 15 Q 75 0, 140 15" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path d="M290 15 Q 225 0, 160 15" fill="none" stroke="currentColor" stroke-width="1"/>
+        <circle cx="150" cy="15" r="3.5" fill="currentColor"/>
+        <circle cx="10" cy="15" r="1.6" fill="currentColor"/>
+        <circle cx="290" cy="15" r="1.6" fill="currentColor"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- 3. ҚҰРМЕТТІ ҚОНАҚТАР -->
+  <section class="section guests" id="guests">
+    <div class="photo-frame photo-frame--tall">
+      <div class="photo-parallax">
+        <div class="photo-bg kenburns" data-photo="guests"></div>
+      </div>
+      <div class="photo-gradient-bottom"></div>
+    </div>
+    <div class="torn-edge" aria-hidden="true"></div>
+
+    <div class="section-body guests-body">
+      <svg class="corner-ornament corner-ornament--left reveal" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 115 C 5 60, 60 5, 115 5" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path d="M5 90 C 30 60, 60 30, 90 5" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+        <circle cx="5" cy="115" r="2.6" fill="currentColor"/>
+      </svg>
+      <svg class="corner-ornament corner-ornament--right reveal" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+        <path d="M115 115 C 115 60, 60 5, 5 5" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path d="M115 90 C 90 60, 60 30, 30 5" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.6"/>
+        <circle cx="115" cy="115" r="2.6" fill="currentColor"/>
+      </svg>
+
+      <p class="eyebrow reveal">СІЗДЕРДІ</p>
+      <p class="script-name reveal" data-config="coupleNamesPossessive">Ахан мен Салтанаттың</p>
+      <p class="invite-text type-reveal">
+        ҮЙЛЕНУ ТОЙЫНА АРНАЛҒАН<br>
+        ТОЙ ДАСТАРХАНЫНАН<br>
+        ДӘМ ТАТЫП, ҚУАНЫШЫМЫЗҒА<br>
+        ОРТАҚТАСУҒА ШАҚЫРАМЫЗ!
+      </p>
+    </div>
+  </section>
+
+  <!-- 4. ТОЙ ИЕЛЕРІ -->
+  <section class="section hosts" id="hosts">
+    <div class="photo-frame photo-frame--tall">
+      <div class="photo-parallax">
+        <div class="photo-bg kenburns" data-photo="hosts"></div>
+      </div>
+      <div class="photo-gradient-bottom"></div>
+    </div>
+    <div class="torn-edge" aria-hidden="true"></div>
+
+    <div class="section-body">
+      <p class="eyebrow reveal">ТОЙ ИЕЛЕРІ:</p>
+      <p class="hosts-names reveal" data-config="hosts">Абдибай — Маниға</p>
+      <p class="script-name reveal">Қуанышымызға ортақ<br>болыңыздар!</p>
+    </div>
+  </section>
+
+  <!-- переходное фото жениха и невесты -->
+  <section class="section couple" id="couple">
+    <div class="photo-frame photo-frame--wide">
+      <div class="photo-parallax">
+        <div class="photo-bg kenburns" data-photo="couple"></div>
+      </div>
+      <div class="photo-gradient-bottom"></div>
+    </div>
+  </section>
+
+  <!-- 5. ДАТА И МЕСТО -->
+  <section class="section datetime" id="datetime">
+    <div class="photo-frame photo-frame--short">
+      <div class="photo-parallax">
+        <div class="photo-bg kenburns" data-photo="datetime"></div>
+      </div>
+      <div class="photo-gradient-bottom"></div>
+    </div>
+    <div class="torn-edge" aria-hidden="true"></div>
+
+    <div class="section-body">
+      <div class="card reveal">
+        <p class="calendar-title">Той салтанаты:</p>
+        <svg class="divider divider--small" viewBox="0 0 200 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 12 Q 50 0, 94 12" fill="none" stroke="currentColor" stroke-width="1"/>
+          <path d="M194 12 Q 150 0, 106 12" fill="none" stroke="currentColor" stroke-width="1"/>
+          <circle cx="100" cy="12" r="3" fill="currentColor"/>
+        </svg>
+        <div class="calendar" id="calendar"></div>
+        <p class="calendar-datetime" id="calendar-datetime"></p>
+        <svg class="divider divider--small" viewBox="0 0 200 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 12 Q 50 0, 94 12" fill="none" stroke="currentColor" stroke-width="1"/>
+          <path d="M194 12 Q 150 0, 106 12" fill="none" stroke="currentColor" stroke-width="1"/>
+          <circle cx="100" cy="12" r="3" fill="currentColor"/>
+        </svg>
+        <p class="card-venue">
+          <span class="venue-name" data-config="venueName">Sharifa</span><br>
+          <span class="venue-address" data-config="venueAddress">Рысқұлов көшесі, 3а</span>
+        </p>
+        <a href="#" id="map-btn" class="btn btn--outline" target="_blank" rel="noopener">📍 КАРТАДАН КӨРУ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. RSVP -->
+  <section class="section rsvp" id="rsvp">
+    <div class="section-body">
+      <p class="rsvp-title reveal">СІЗДЕРДІҢ КЕЛУІҢІЗ БІЗ ҮШІН ӨТЕ МАҢЫЗДЫ</p>
+
+      <svg class="divider reveal" viewBox="0 0 300 30" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 15 Q 75 0, 140 15" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path d="M290 15 Q 225 0, 160 15" fill="none" stroke="currentColor" stroke-width="1"/>
+        <circle cx="150" cy="15" r="3.5" fill="currentColor"/>
+        <circle cx="10" cy="15" r="1.6" fill="currentColor"/>
+        <circle cx="290" cy="15" r="1.6" fill="currentColor"/>
+      </svg>
+
+      <button type="button" id="rsvp-open" class="btn btn--filled reveal">ҚАТЫСУДЫ РАСТАУ</button>
+
+      <form id="rsvp-form" class="rsvp-form" hidden>
+        <label class="field">
+          <span>Аты-жөні</span>
+          <input type="text" name="name" required autocomplete="name">
+        </label>
+
+        <fieldset class="field field--radio">
+          <legend>Қатысуыңыз</legend>
+          <label><input type="radio" name="attending" value="yes" checked> Қатысамын</label>
+          <label><input type="radio" name="attending" value="no"> Қатыса алмаймын</label>
+        </fieldset>
+
+        <label class="field">
+          <span>Қонақ саны</span>
+          <input type="number" name="guests" min="1" max="20" value="1" inputmode="numeric">
+        </label>
+
+        <label class="field">
+          <span>Телефон нөмірі</span>
+          <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 7__ ___ __ __">
+        </label>
+
+        <button type="submit" class="btn btn--filled">ЖІБЕРУ</button>
+      </form>
+
+      <div id="rsvp-thanks" class="rsvp-thanks" hidden>
+        <svg viewBox="0 0 60 60" width="42" height="42" class="thanks-check">
+          <circle cx="30" cy="30" r="27" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M18 31 L26 39 L43 21" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <p id="rsvp-thanks-text">Келгеніңізге қуаныштымыз!</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
